@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="refresh" content="0; url=./home/index.html" />
+  <title>Vārtā — वा (SVG)</title>
+<style>
+    :root {
+      --bg-gradient: linear-gradient(135deg, #0f3b66, #1f6b9a);
+      --card-bg: rgba(255, 255, 255, 0.08);
+      --stroke-color: #fff;
+      --shadow-color: rgba(0, 0, 0, 0.35);
+      --stroke-width: 11;
+    }
+
+    body {
+      margin: 0;
+      font-family: 'Noto Sans Devanagari', sans-serif;
+      background: var(--bg-gradient);
+      color: #fff;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+
+    .container {
+      display: flex;
+      align-items: center;
+      gap: 28px;
+      background: var(--card-bg);
+      padding: 32px 44px;
+      border-radius: 20px;
+      box-shadow: 0 8px 24px var(--shadow-color);
+      backdrop-filter: blur(6px);
+    }
+
+    .glyph {
+      font-size: 76px;
+      font-weight: 700;
+      text-shadow: 0 2px 6px rgba(0,0,0,0.45);
+    }
+
+    svg {
+      width: 140px;
+      height: auto;
+      stroke: var(--stroke-color);
+      fill: none;
+      stroke-linecap: round;
+      stroke-linejoin: round;
+      filter: drop-shadow(0 3px 6px rgba(0,0,0,0.4));
+      shape-rendering: geometricPrecision;
+    }
+
+    .stroke { stroke-width: var(--stroke-width); }
+    .shiro { stroke-width: calc(var(--stroke-width) + 1); }
+  </style>
+</head>
+<body>
+  <p>If you are not redirected automatically, <a href="./home/index.html">click here</a>.</p>
+<div class="container">
+    <span class="glyph">वा</span>
+
+    <!-- Sharper SVG resembling Devanagari "वा" -->
+    <svg viewBox="0 0 170 170" role="img" aria-label="Devanagari glyph 'वा'">
+      <g>
+        <!-- Vertical stems -->
+        <line class="stroke" x1="60" y1="28" x2="60" y2="78" />
+        <line class="stroke" x1="82" y1="28" x2="82" y2="78" />
+
+        <!-- Shirorekhā (top bar) -->
+        <line class="shiro" x1="24" y1="28" x2="93" y2="28" />
+
+        <!-- Arc loop for व -->
+        
+        <path class="stroke" d="M 60 59 A 16 12 0 1 1 46.9 45" />
+      </g>
+    </svg>
+  </div>
+</body>
+</html>
