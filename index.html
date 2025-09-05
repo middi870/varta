@@ -1,10 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="refresh" content="0; url=./home/index.html" />
   <title>Vārtā — वा (SVG)</title>
-<style>
+  <style>
     :root {
       --bg-gradient: linear-gradient(135deg, #0f3b66, #1f6b9a);
       --card-bg: rgba(255, 255, 255, 0.08);
@@ -38,7 +39,7 @@
     .glyph {
       font-size: 76px;
       font-weight: 700;
-      text-shadow: 0 2px 6px rgba(0,0,0,0.45);
+      text-shadow: 0 2px 6px rgba(0, 0, 0, 0.45);
     }
 
     svg {
@@ -48,17 +49,23 @@
       fill: none;
       stroke-linecap: round;
       stroke-linejoin: round;
-      filter: drop-shadow(0 3px 6px rgba(0,0,0,0.4));
+      filter: drop-shadow(0 3px 6px rgba(0, 0, 0, 0.4));
       shape-rendering: geometricPrecision;
     }
 
-    .stroke { stroke-width: var(--stroke-width); }
-    .shiro { stroke-width: calc(var(--stroke-width) + 1); }
+    .stroke {
+      stroke-width: var(--stroke-width);
+    }
+
+    .shiro {
+      stroke-width: calc(var(--stroke-width) + 1);
+    }
   </style>
 </head>
+
 <body>
   <p>If you are not redirected automatically, <a href="./home/index.html">click here</a>.</p>
-<div class="container">
+  <div class="container">
     <span class="glyph">वा</span>
 
     <!-- Sharper SVG resembling Devanagari "वा" -->
@@ -72,10 +79,15 @@
         <line class="shiro" x1="24" y1="28" x2="93" y2="28" />
 
         <!-- Arc loop for व -->
-        
+
         <path class="stroke" d="M 60 59 A 16 12 0 1 1 46.9 45" />
       </g>
     </svg>
   </div>
+  <script>
+    window.location.replace("./home/");
+  </script>
+
 </body>
+
 </html>
