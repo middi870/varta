@@ -164,7 +164,7 @@ async function fetchProfile() {
 
     if (!token) {
         showError("You are not logged in. Redirecting to login...");
-        setTimeout(() => window.location.href = "index.html", 1500);
+        setTimeout(() => window.location.href = "../auth.html", 1500);
         return;
     }
 
@@ -177,7 +177,7 @@ async function fetchProfile() {
             if (res.status === 401 || res.status === 403) {
                 showError("Session expired. Redirecting to login...");
                 localStorage.removeItem('k12_token');
-                setTimeout(() => window.location.href = "index.html", 1500);
+                setTimeout(() => window.location.href = "../auth.html", 1500);
             } else {
                 showError("Unable to fetch profile.");
             }
@@ -227,3 +227,4 @@ document.addEventListener('DOMContentLoaded', fetchProfile);
 </script>
 </body>
 </html>
+
