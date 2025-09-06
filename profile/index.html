@@ -205,10 +205,11 @@ function showError(msg) {
 
 document.getElementById('logoutBtn').addEventListener('click', () => {
     localStorage.removeItem('k12_token');
-    window.location.href = "index.html";
+    window.location.href = "../.auth.html";
 });
 
 window.onload = fetchProfile;
 </script>
 </body>
 </html>
+
